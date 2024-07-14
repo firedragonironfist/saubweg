@@ -18,9 +18,9 @@ document
     const messagevalue = input5.value;
 
     if (!firstNamevalue || !lastNamevalue || !emailvalue) {
-      alert("Please fill out all fields");
+      alert("Bitte füllen Sie die Beschreibung aus");
     } else {
-      alert('Bitte warten Sie 2 Minuten, bis das Formular abgeschickt wird.')
+      alert('Senden. . .')
       data["firstName"] = firstNamevalue;
       data["lastName"] = lastNamevalue;
       data["email"] = emailvalue;
@@ -35,7 +35,7 @@ document
         },
       })
         .then((data) => {
-          alert("Form submitted successfully");
+          alert("Formular erfolgreich eingereicht");
         });
     }
   });

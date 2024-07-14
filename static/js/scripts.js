@@ -53,7 +53,7 @@ next2Button.addEventListener("click", function () {
   const inputtext1 = input1.value;
 
   if (!inputtext1) {
-    alert("Please fill the description");
+    alert("Bitte füllen Sie die Beschreibung aus");
   } else {
     data["Beschreibung"] = inputtext1;
     step3_Entrumpelung.style.display = "none";
@@ -78,7 +78,7 @@ next3Button.addEventListener("click", function () {
     !quadratmetervalue ||
     !umzugArtvalue
   ) {
-    alert("Please fill out all fields");
+    alert("Bitte füllen Sie die Beschreibung aus");
   } else {
     data["Stratort"] = Stratortvalue;
     data["zielort"] = zielortvalue;
@@ -102,9 +102,9 @@ document
     const messagevalue = input11.value;
 
     if (!firstNamevalue || !lastNamevalue || !emailvalue) {
-      alert("Please fill out all fields");
+      alert("Bitte füllen Sie die Beschreibung aus");
     } else {
-      alert('Bitte warten Sie 2 Minuten, bis das Formular abgeschickt wird.')
+      alert('Senden. . .')
       data["firstName"] = firstNamevalue;
       data["lastName"] = lastNamevalue;
       data["email"] = emailvalue;
@@ -120,9 +120,9 @@ document
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
-            alert("Form submitted successfully");
+            alert("Formular erfolgreich eingereicht");
           } else {
-            alert("Error submitting form");
+            alert("Fehler beim Absenden des Formulars");
           }
         });
     }
